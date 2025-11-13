@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/components/preloader"
+path = "github.com/ziyooren/hugo-modules/components/preloader"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'preloader';
+@import "preloader";
 ```
 
 <hr>

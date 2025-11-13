@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
+path = "github.com/ziyooren/hugo-modules/shortcodes/notice"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'notice';
+@import "notice";
 ```
 
 <hr>
@@ -25,11 +25,11 @@ The svg icons are from [heroicons.com](https://heroicons.com/)
 
 ## Shortcode Implementation
 
-
 ```md
 {{< notice "abstract" >}}
 {{< /notice >}}
 ```
+
 Aliases: `summary`, `tldr`
 
 ---
@@ -45,11 +45,14 @@ Aliases: `summary`, `tldr`
 {{< notice "todo" >}}
 {{< /notice >}}
 ```
+
 ---
+
 ```md
 {{< notice "tip" >}}
 {{< /notice >}}
 ```
+
 Aliases: `hint`, `important`
 
 ---
@@ -58,6 +61,7 @@ Aliases: `hint`, `important`
 {{< notice "success" >}}
 {{< /notice >}}
 ```
+
 Aliases: `check`, `done`
 
 ---
@@ -66,6 +70,7 @@ Aliases: `check`, `done`
 {{< notice "question" >}}
 {{< /notice >}}
 ```
+
 Aliases: `help`, `faq`
 
 ---
@@ -74,6 +79,7 @@ Aliases: `help`, `faq`
 {{< notice "warning" >}}
 {{< /notice >}}
 ```
+
 Aliases: `caution`, `attention`
 
 ---
@@ -82,6 +88,7 @@ Aliases: `caution`, `attention`
 {{< notice "failure" >}}
 {{< /notice >}}
 ```
+
 Aliases: `fail`, `missing`
 
 ---
@@ -90,6 +97,7 @@ Aliases: `fail`, `missing`
 {{< notice "danger" >}}
 {{< /notice >}}
 ```
+
 Aliases: `error`
 
 ---
@@ -112,4 +120,5 @@ Aliases: `error`
 {{< notice "quote" >}}
 {{< /notice >}}
 ```
+
 Aliases: `cite`

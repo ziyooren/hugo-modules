@@ -6,7 +6,7 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/codepen"
+path = "github.com/ziyooren/hugo-modules/shortcodes/codepen"
 ```
 
 Add the following code to your js plugins list in the `config.toml` file.
@@ -33,8 +33,10 @@ Add the following script to your theme header.
 
 ```md
 <!-- minimal use -->
+
 {{< codepen QWvKwmq >}}
 
 <!-- extended use -->
+
 {{< codepen id="QWvKwmq" theme="light" height="600" >}}
 ```

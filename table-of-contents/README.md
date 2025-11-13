@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/table-of-contents"
+path = "github.com/ziyooren/hugo-modules/table-of-contents"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'toc';
+@import "toc";
 ```
 
 <hr>
@@ -40,8 +40,8 @@ ordered = true
 
 available parameters:
 
-* Class = "your-class"
-* Collapsed: display as collapsed | default true
+- Class = "your-class"
+- Collapsed: display as collapsed | default true
 
 ```html
 {{ partial "toc.html" }}

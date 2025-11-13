@@ -1,3 +1,3 @@
-module github.com/gethugothemes/hugo-modules/shortcodes/codepen
+module github.com/ziyooren/hugo-modules/shortcodes/codepen
 
 go 1.19

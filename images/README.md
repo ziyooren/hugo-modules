@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/images"
+path = "github.com/ziyooren/hugo-modules/images"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'images';
+@import "images";
 ```
 
 If you want to enable placeholder/lazy-loader, then add the following code to your js plugins list in the `config.toml` file.
@@ -82,19 +82,19 @@ Call it, as a partial in your theme.
 
 Available parameters:
 
-* `Src`: image source
-* `Alt`: image alt text
-* `Size`: image size (example: "100x100")
-* `Class`: image class
-* `Resize`: image resize option | default: true
-* `Webp`: generate webp version | default: true
-* `Context`: image context | default: .
-* `Command`: image resizing command | default: "Resize"
-* `Placeholder`: image placeholder | default: false
-* `DisplayXL`: image size for extra large screen | default: "1110px"
-* `DisplayLG`: image size for large screen | default: "700px"
-* `DisplayMD`: image size for medium screen | default: "600px"
-* `DisplaySM`: image size for small screen | default: "545px"
+- `Src`: image source
+- `Alt`: image alt text
+- `Size`: image size (example: "100x100")
+- `Class`: image class
+- `Resize`: image resize option | default: true
+- `Webp`: generate webp version | default: true
+- `Context`: image context | default: .
+- `Command`: image resizing command | default: "Resize"
+- `Placeholder`: image placeholder | default: false
+- `DisplayXL`: image size for extra large screen | default: "1110px"
+- `DisplayLG`: image size for large screen | default: "700px"
+- `DisplayMD`: image size for medium screen | default: "600px"
+- `DisplaySM`: image size for small screen | default: "545px"
 
 ```html
 <!-- simple image call -->
@@ -112,14 +112,14 @@ Call it, as a partial in your theme.
 
 Available parameters:
 
-* `Src`: background-image source
-* `Size`: background-image resize (example: "100x100")
-* `Perspective`: background-size | default: "cover"
-* `Webp`: generate webp version | default: true
-* `Context`: image context | default: .
-* `Position`: background-position | default: "center center"
-* `Repeat`: background-repeat | default: "no-repeat"
-* `Placeholder`: If `Placeholder` is true, then `lazy` class is required to this element. | default: false
+- `Src`: background-image source
+- `Size`: background-image resize (example: "100x100")
+- `Perspective`: background-size | default: "cover"
+- `Webp`: generate webp version | default: true
+- `Context`: image context | default: .
+- `Position`: background-position | default: "center center"
+- `Repeat`: background-repeat | default: "no-repeat"
+- `Placeholder`: If `Placeholder` is true, then `lazy` class is required to this element. | default: false
 
 ```html
 {{ partial `bg-image.html` (dict `Src` .background_image ) | safeHTMLAttr }}
@@ -131,17 +131,17 @@ Available parameters:
 
 Available parameters:
 
-* `src`: image source
-* `caption`: image caption
-* `alt`: image alt text
-* `height`: image height
-* `width`: image width
-* `position`: image position | available: "center", "left", "right", "float-left", "float-right"
-* `command`: image resizing command | available: "Fit", "Fill", "Resize" | default: "Resize"
-* `option`: image resizing option
-* `class`: image custom class
-* `title`: image title
-* `webp`: generate webp version | default: true
+- `src`: image source
+- `caption`: image caption
+- `alt`: image alt text
+- `height`: image height
+- `width`: image width
+- `position`: image position | available: "center", "left", "right", "float-left", "float-right"
+- `command`: image resizing command | available: "Fit", "Fill", "Resize" | default: "Resize"
+- `option`: image resizing option
+- `class`: image custom class
+- `title`: image title
+- `webp`: generate webp version | default: true
 
 ```md
 {{< image src="images/image.png" >}}

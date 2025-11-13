@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/modal"
+path = "github.com/ziyooren/hugo-modules/modal"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'modal';
+@import "modal";
 ```
 
 Add the following code to your js plugins list in the `config.toml` file.
@@ -29,10 +29,10 @@ link = "js/modal.js"
 
 Available parameters:
 
-* `BtnLabel`: button label
-* `BtnClass`: button class
-* `Content`: modal content
-* `BodyClass`: modal body item class
+- `BtnLabel`: button label
+- `BtnClass`: button class
+- `Content`: modal content
+- `BodyClass`: modal body item class
 
 ```html
 {{ partial "modal" (dict "BtnLabel" "Click Me" "Content" "How are You?") }}
@@ -44,9 +44,9 @@ Available parameters:
 
 Available parameters:
 
-* `btn-label`: button label
-* `btn-class`: modal button class
-* `body-class`: modal content class
+- `btn-label`: button label
+- `btn-class`: modal button class
+- `body-class`: modal content class
 
 ```md
 {{< modal btn-label="Click Me" body-class="w-[1000px]" >}}

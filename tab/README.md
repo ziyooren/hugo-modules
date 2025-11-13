@@ -6,13 +6,13 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/tab"
+path = "github.com/ziyooren/hugo-modules/tab"
 ```
 
 Add the following code to your `assets/scss/main.scss` or `assets/scss/style.scss` file.
 
 ```scss
-@import 'tab';
+@import "tab";
 ```
 
 Add the following code to your js plugins list in the `config.toml` file.
@@ -57,15 +57,9 @@ Third Tab
     <li class="tab-nav-item" data-tab="2" tabindex="-1">Tab 3</li>
   </ul>
   <div class="tab-content" data-tab-content>
-    <div class="tab-content-panel active" data-tab-panel="0">
-      Tab 1 content
-    </div>
-    <div class="tab-content-panel" data-tab-panel="1">
-      Tab 2 content
-    </div>
-    <div class="tab-content-panel" data-tab-panel="2">
-      Tab 3 content
-    </div>
+    <div class="tab-content-panel active" data-tab-panel="0">Tab 1 content</div>
+    <div class="tab-content-panel" data-tab-panel="1">Tab 2 content</div>
+    <div class="tab-content-panel" data-tab-panel="2">Tab 3 content</div>
   </div>
 </div>
 ```

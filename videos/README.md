@@ -1,8 +1,8 @@
 # Video Modules
 
-- Local or Remote video - [Read ↆ](https://github.com/gethugothemes/hugo-modules/tree/master/videos#localremote-video)
-- Youtube Video [Read ↆ](https://github.com/gethugothemes/hugo-modules/tree/master/videos#youtube-video-lite-and-fast)
-- Vimeo Video [Read ↆ](https://github.com/gethugothemes/hugo-modules/tree/master/videos#vimeo-video-lite-and-fast)
+- Local or Remote video - [Read ↆ](https://github.com/ziyooren/hugo-modules/tree/master/videos#localremote-video)
+- Youtube Video [Read ↆ](https://github.com/ziyooren/hugo-modules/tree/master/videos#youtube-video-lite-and-fast)
+- Vimeo Video [Read ↆ](https://github.com/ziyooren/hugo-modules/tree/master/videos#vimeo-video-lite-and-fast)
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add the following code to your module list in the `config/_default/module.toml` 
 
 ```toml
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/videos"
+path = "github.com/ziyooren/hugo-modules/videos"
 ```
 
 <hr>
@@ -21,9 +21,11 @@ path = "github.com/gethugothemes/hugo-modules/videos"
 
 ```md
 <!-- minimal use -->
+
 {{ partial "video.html" (dict "Src" "https://www.w3schools.com/html/mov_bbb.mp4") }}
 
 <!-- extended use -->
+
 {{ partial "video.html" (dict "Src" "videos/demo.mp4" "Width" "500" "Height" "auto" "Autoplay" "false" "Loop" "false" "Muted" "false" "Controls" "true" "Class" "ght-video") }}
 ```
 
@@ -31,9 +33,11 @@ path = "github.com/gethugothemes/hugo-modules/videos"
 
 ```md
 <!-- minimal use -->
+
 {{< video src="https://www.w3schools.com/html/mov_bbb.mp4" >}}
 
 <!-- extended use -->
+
 {{< video src="videos/demo.mp4" width="500" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="" >}}
 ```
 
@@ -63,9 +67,11 @@ link = "plugins/youtube-lite.js"
 
 ```md
 <!-- minimal use -->
+
 {{ partial "youtube-lite.html" (dict "Id" "6FIoOJm3vYA") }}
 
 <!-- extended use -->
+
 {{ partial "youtube-lite.html" (dict "Id" "6FIoOJm3vYA" "Class" "mx-auto"  "Width" "600px" "Style" "" "Attr" "") }}
 ```
 
@@ -73,9 +79,11 @@ link = "plugins/youtube-lite.js"
 
 ```md
 <!-- minimal use -->
+
 {{< youtube-lite 6FIoOJm3vYA >}}
 
 <!-- extended use -->
+
 {{< youtube-lite id="6FIoOJm3vYA" class="mx-auto" width="600px" style="" attr="" >}}
 ```
 
@@ -102,9 +110,11 @@ link = "plugins/vimeo-lite.js"
 
 ```md
 <!-- minimal use -->
+
 {{ partial "vimeo-lite.html" (dict "Id" "805124764") }}
 
 <!-- extended use -->
+
 {{ partial "vimeo-lite.html" (dict "Id" "805124764" "Class" "mx-auto"  "Width" "600px" "Style" "" "Attr" "") }}
 ```
 
@@ -112,9 +122,11 @@ link = "plugins/vimeo-lite.js"
 
 ```md
 <!-- minimal use -->
+
 {{< vimeo-lite 364402896 >}}
 
 <!-- extended use -->
+
 {{< vimeo-lite id="364402896" class="mx-auto" width="600px" style="" attr="" >}}
 ```
 
